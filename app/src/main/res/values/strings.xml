@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Talking Morse</string>
+    <string name="need_a_new_account"> NOT REGISTERED !?</string>
+    <string name="display_name">NAME</string>
+    <string name="email">E-MAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="log_out">LOG OUT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_status">Hi there, I\'m using Talking Morse App </string>
+    <string name="from">From:</string>
+    <string name="continue1">continue</string>
+    <string name="to">To:</string>
+    <string name="title_activity_user_schedule2">user_schedule2</string>
+</resources>

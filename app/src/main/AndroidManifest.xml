@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.im.nothuman.talkingMorse">
+
+    <application
+        android:name="com.im.nothuman.talkingMorse.talkingmorse"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.im.nothuman.talkingMorse.chat2_Activity"></activity>
+
+        <activity android:name="com.im.nothuman.talkingMorse.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.im.nothuman.talkingMorse.StartActivity" />
+        <activity
+            android:name="com.im.nothuman.talkingMorse.RegisterActivity"
+            android:parentActivityName="com.im.nothuman.talkingMorse.StartActivity" />
+        <activity
+            android:name="com.im.nothuman.talkingMorse.LoginActivity"
+            android:parentActivityName="com.im.nothuman.talkingMorse.StartActivity" />
+        <activity android:name="com.im.nothuman.talkingMorse.SettingsActivity" />
+        <activity
+            android:name="com.im.nothuman.talkingMorse.StatusActivity"
+            android:parentActivityName="com.im.nothuman.talkingMorse.SettingsActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+             />
+        <activity
+            android:name="com.im.nothuman.talkingMorse.UsersActivity"
+            android:parentActivityName="com.im.nothuman.talkingMorse.MainActivity" />
+        <activity android:name="com.im.nothuman.talkingMorse.ProfileActivity">
+            <intent-filter>
+                <action android:name="in.tvac.akshaye.lapitchat_TARGET_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.im.nothuman.talkingMorse.ChatActivity"
+            android:parentActivityName="com.im.nothuman.talkingMorse.MainActivity" />
+        <activity android:name="com.im.nothuman.talkingMorse.activity_select_time" />
+        <activity
+            android:name="com.im.nothuman.talkingMorse.user_schedule"
+            android:parentActivityName="com.im.nothuman.talkingMorse.MainActivity" />
+        <service android:name="com.im.nothuman.talkingMorse.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>
